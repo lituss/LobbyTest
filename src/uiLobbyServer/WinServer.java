@@ -4,7 +4,10 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
 import java.awt.BorderLayout;
+import java.io.IOException;
+
 import javax.swing.JSplitPane;
 import javax.swing.JTextField;
 
@@ -40,8 +43,9 @@ public class WinServer {
 
 	/**
 	 * Create the application.
+	 * @throws IOException 
 	 */
-	public WinServer() {
+	public WinServer() throws IOException {
 		lobbyServer = new LobbyServer(this);
 		initialize();
 	}

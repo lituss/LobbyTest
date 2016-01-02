@@ -17,7 +17,7 @@ public class sqlDB {
 	    creaTaules();
 	  }
 	
-boolean creaTaules(){
+private boolean creaTaules(){
 	String crea = "create table if not exists jugadors(nom string,clau string)";
 	Statement sentencia = null ;
 	try {sentencia = conexioDB.createStatement();} catch (SQLException e) {
@@ -37,7 +37,7 @@ boolean creaTaules(){
 return true;
 }
 
-boolean existeixUsuari(String user)
+public boolean existeixUsuari(String user)
 {
 	int total = 0;
 	Statement sentencia = null;

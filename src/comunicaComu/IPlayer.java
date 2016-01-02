@@ -5,12 +5,11 @@ import comunicaServer.Room;
 import utils.Array;
 
 public interface IPlayer {
-Estat login(String user,String pass);
-Estat join(String user,String pass);
+Estats login(String user,String pass);
 Array<Room> getRooms(Room.Tipus tipus);
-Estat joinRoomSetimig(Room room);
+Estats joinRoomSetimig(Room room);
 Array<LobbyGame> getRoomGames(Room room);
-Estat joinGame(LobbyGame lobbyGame);
-Estat createGame(LobbyGame lobbyGame);
+Estats joinGame(LobbyGame lobbyGame);
+Estats createGame(LobbyGame lobbyGame);
 
 }
