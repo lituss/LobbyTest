@@ -14,31 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/comunicaServer/GameSetimig.java</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/LobbyTest.old/src/GameSetimig.java</locationURI>
-		</link>
-		<link>
-			<name>src/comunicaServer/LobbyGame.java</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/LobbyTest.old/src/LobbyGame.java</locationURI>
-		</link>
-		<link>
-			<name>src/comunicaServer/LobbyPlayer.java</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/LobbyTest.old/src/LobbyPlayer.java</locationURI>
-		</link>
-		<link>
-			<name>src/comunicaServer/LobbyServer.java</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/LobbyTest.old/src/LobbyServer.java</locationURI>
-		</link>
-		<link>
-			<name>src/comunicaServer/Room.java</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/LobbyTest.old/src/Room.java</locationURI>
-		</link>
-	</linkedResources>
 </projectDescription>

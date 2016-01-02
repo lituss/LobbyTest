@@ -130,6 +130,7 @@ public final class MathUtils {
 
 	// ---
 
+	
 	static public Random random = new RandomXS128();
 
 	/** Returns a random number between 0 (inclusive) and the specified value (inclusive). */
