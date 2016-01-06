@@ -1,13 +1,30 @@
-package comunicaServer;
+package comunicaComu;
 import java.util.ArrayList;
 import java.util.Observable;
 
+import comunicaServer.LobbyPlayer;
 import utils.Array;
 
 
 public abstract class Room extends Observable{
 	public static enum Tipus {Setimig};
 	protected Tipus tipus;
+	public Tipus getTipus() {
+		return tipus;
+	}
+
+	public void setTipus(Tipus tipus) {
+		this.tipus = tipus;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
 	protected String nom;
 	
 	protected static Array<LobbyPlayer> players = new Array<LobbyPlayer>();

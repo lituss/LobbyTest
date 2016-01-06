@@ -7,6 +7,7 @@ import com.esotericsoftware.kryonet.Listener;
 import com.esotericsoftware.kryonet.Server;
 
 import comunicaComu.Network;
+import comunicaComu.Room;
 import uiLobbyServer.WinServer;
 import utils.Array;
 
@@ -66,7 +67,7 @@ public LobbyServer(WinServer winServer) throws IOException{
 	public sqlDB getsql(){return sql;}
 	public Array<Room> getRooms(Room.Tipus tipus){
 		Array<Room> auxRooms = new Array<Room>();
-		for (Room auxRoom : rooms) if (auxRoom.tipus == tipus || tipus ==null) auxRooms.add(auxRoom);
+		for (Room auxRoom : rooms) if (auxRoom.getTipus() == tipus || tipus ==null) auxRooms.add(auxRoom);
 		return auxRooms;
 	}
 	

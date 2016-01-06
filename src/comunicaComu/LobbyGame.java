@@ -1,6 +1,8 @@
-package comunicaServer;
+package comunicaComu;
 
 import java.util.Observable;
+
+import comunicaServer.LobbyPlayer;
 
 import utils.Array;
 

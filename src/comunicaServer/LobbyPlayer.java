@@ -7,10 +7,14 @@ import java.util.TimerTask;
 import utils.Array;
 
 import com.esotericsoftware.kryonet.Connection;
+import com.esotericsoftware.kryonet.rmi.ObjectSpace;
 
 import comunicaComu.Estats;
 import comunicaComu.IPlayer;
-import comunicaServer.Room.Tipus;
+import comunicaComu.LobbyGame;
+import comunicaComu.Network;
+import comunicaComu.Room;
+import comunicaComu.Room.Tipus;
 
 public class LobbyPlayer extends Connection implements IPlayer{
 	public Observable obs;
@@ -19,6 +23,7 @@ public class LobbyPlayer extends Connection implements IPlayer{
 	
 	public LobbyPlayer(){
 		obs = new Observable();
+		new ObjectSpace(this).register(Network.PLAYER, this);
 	}
 	public static void putLobbyServer(LobbyServer auxLobbyServer){lobbyServer = auxLobbyServer;}
 	

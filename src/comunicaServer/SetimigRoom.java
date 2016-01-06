@@ -1,5 +1,8 @@
 package comunicaServer;
 
+import comunicaComu.LobbyGame;
+import comunicaComu.Room;
+
 public class SetimigRoom extends Room {
 
 	public SetimigRoom(String nomSala,int maxPlayers,int maxGames) {

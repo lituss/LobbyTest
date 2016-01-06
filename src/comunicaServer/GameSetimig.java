@@ -1,5 +1,7 @@
 package comunicaServer;
 
+import comunicaComu.LobbyGame;
+
 
 public class GameSetimig extends LobbyGame {
 private int maxPlayers,credit,maxAposta;

@@ -1,7 +1,6 @@
 package comunicaComu;
 
-import comunicaServer.LobbyGame;
-import comunicaServer.Room;
+
 import utils.Array;
 
 public interface IPlayer {
