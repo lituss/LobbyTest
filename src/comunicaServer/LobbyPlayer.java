@@ -1,6 +1,7 @@
 package comunicaServer;
 
 import java.util.Observable;
+import java.util.Observer;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -11,21 +12,26 @@ import com.esotericsoftware.kryonet.rmi.ObjectSpace;
 
 import comunicaComu.Estats;
 import comunicaComu.IPlayer;
+import comunicaComu.IProxyLobby;
 import comunicaComu.LobbyGame;
 import comunicaComu.Network;
 import comunicaComu.Room;
 import comunicaComu.Room.Tipus;
 
-public class LobbyPlayer extends Connection implements IPlayer{
+public class LobbyPlayer extends Connection implements IPlayer,Observer{
 	public Observable obs;
 	private Estats estat;
 	private static LobbyServer lobbyServer;
+	private IProxyLobby iProxyLobby;
 	
 	public LobbyPlayer(){
 		obs = new Observable();
 		new ObjectSpace(this).register(Network.PLAYER, this);
 	}
-	public static void putLobbyServer(LobbyServer auxLobbyServer){lobbyServer = auxLobbyServer;}
+	public static void putLobbyServer(LobbyServer auxLobbyServer){
+		lobbyServer = auxLobbyServer;
+		iProxyLobby = lobbyServer.
+		}
 	
 	@Override
 	public Estats login(String user, String pass) {
@@ -78,5 +84,10 @@ public class LobbyPlayer extends Connection implements IPlayer{
 	public Estats createGame(LobbyGame lobbyGame) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	@Override
+	public void update(Observable arg0, Object arg1) {
+		// TODO Auto-generated method stub
+		
 	}
 }
